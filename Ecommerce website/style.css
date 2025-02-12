@@ -1,0 +1,360 @@
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 140px 0 0 0; /* Push content down by the same height as the navbar */
+}
+h1, h4, h3, p {
+    margin: 0;
+}
+h4{
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 40px;
+}
+h2{
+    font-size: 50px;
+}
+h5{
+    font-size: 20px;
+    font-weight: bold;
+}
+p{
+    font-size: 25px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 40px;
+}
+h6{
+    font-size: 20px;
+    font-weight:bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 10px 30px rgba(250, 234, 0, 0.15);
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Define height */
+}
+#head img {
+    width: 100px; 
+    height: auto; 
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: large;
+    font-weight: bolder;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: gold;
+    
+}
+#navbar li a.active::after ,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background:goldenrod;
+    position:absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#navbar img {
+    width:30px;
+    margin-right: 20px;
+}
+#hero{
+    background-image: url("/images/banner.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:aliceblue;
+    text-align: right;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: center;
+    
+}
+
+#hero img{
+    width:700px;
+    padding-right: 30px;
+}
+#hero button{
+    margin-top: 20px;
+    margin-right: 60px; /* Pushes it left */
+    padding: 30px 90px; /* Adjust padding for better size */
+    background-color: transparent;
+    border-style: none;
+    background-image: url("/images/button.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#hero button:hover{
+    color: brown;
+
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-p1 img{
+    width:100px
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.15);
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(35, 33, 33, 0.15);
+}
+#feature .fe-box img{
+    width:100%;
+}
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: black;
+    background-color:rgb(223, 235, 247);
+}
+#product1 {
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+#product1 .pro{
+    width:23%;
+    min-width: none;
+    padding: 10px 12px;
+    border: 1px solid;
+    border-radius: 30px;
+    cursor:pointer;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease;
+    position:relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+    margin-top:10px
+}
+
+#product1 .pro h5{
+    padding:0;
+    margin:0;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span{
+    font-family: sans-serif;
+    font-weight: 10px;
+}
+
+#product1 .pro .des .nike{
+    color: grey;
+    font-size: 17px;
+}
+#product1 .pro .des h3{
+    color:black;
+    font-size: 19px;
+    font-family: sans-serif;
+    padding: 0 2px;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color:black;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+#product1 .pro .des .star{
+    color:gold;
+    padding:10px 0;
+    font-size: 15px;
+}
+#product1 .pro .cart{
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color:aliceblue;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid black;
+    position: absolute;
+    bottom:15px;
+    right:10px;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;  /* Adjust as needed */
+    padding-top: 20px;
+    
+}
+#product1 .pro .cart1{
+    position:absolute;
+    bottom:30px;
+    right:10px
+}
+
+#banner{
+    margin-top: 30px;
+}
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("/images/banner3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    padding: 40px 10px;
+    margin:30px 0;
+}
+#newsletter .newstext p{
+    font-size: 12px;
+    color: aliceblue;
+    
+}
+#newsletter .newstext p span{
+    color: gold;
+}
+#newsletter .newstext h4{
+    font-size: 30px;
+    color: aliceblue;
+    padding:10px 0;
+}
+#newsletter .form {
+    display: flex; 
+    align-items: center;
+    gap: 10px; 
+}
+#newsletter input{
+    height: 3.125rem ;
+    padding: 0 2.25em;
+    font-size: 10px;
+    width:100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+}
+#newsletter button {
+    height: 3.125rem; 
+    background: gold;
+    color: black;
+    border: none;
+    padding: 0 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.col h5{
+    margin:0;
+    padding-top:20px;
+    padding-bottom: 10px;
+    font-size:20px;
+    font-weight: 10px;
+}
+.col p{
+    
+    font-size: 12px;
+    font-weight: lighter;
+    color: grey;
+}
+.col p span{
+    font-weight: 13px;
+    color: black;
+}
+.copyright p{
+    font-size: 10px;
+}
+footer{
+    display: flex;
+    text-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    
+}
+footer .col a{
+    text-decoration: none;
+    color:black
+}
+footer .col a:hover{
+    text-decoration: none;
+    color:rgb(255, 63, 63)
+}
+.copyright{
+    width: 100%;
+   text-align: center;
+   margin:0;
+   padding: 0;
+   
+}
+.copyright p{
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+
